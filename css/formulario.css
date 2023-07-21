@@ -1,0 +1,82 @@
+/* aplicando css global */
+:root {
+    --color_1: #FC7300;
+    --color_2: #1F8A70;
+    --color_3: #00425A;
+    --color_4: #181823;
+    --color_5: #EFF5F5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../img/background_formulario.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    padding-top: 5rem;
+}
+
+img {
+    width: 100%;
+}
+
+/* aplicando css al encabezado */
+#encabezado {
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color_5);
+    align-items: center;
+    height: 5rem;
+    padding: 0.5rem 1rem;
+}
+
+#header--logo {
+    width: 90px;
+    margin-right: auto;
+    padding: 0.2rem;
+    padding-top: 0.4rem;
+}
+
+#formulario {
+    margin: 4rem 2rem;
+    background-color: var(--color_5);
+    opacity: 0.8;
+}
+
+.form--label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color_3);
+}
+
+@media(min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

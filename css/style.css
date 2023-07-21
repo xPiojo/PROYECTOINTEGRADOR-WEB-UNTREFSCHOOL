@@ -1,0 +1,399 @@
+/* aplicando css global */
+:root {
+    --color_1: #FC7300;
+    --color_2: #1F8A70;
+    --color_3: #00425A;
+    --color_4: #181823;
+    --color_5: #EFF5F5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    padding-top: 5rem;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-bottom: 2rem;
+    background-color: var(--color_1);
+}
+
+section>h2 {
+    font-family: 'Belanosima', sans-serif;
+    text-align: center;
+    color: var(--color_4);
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+section p {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+
+}
+
+/* aplicando css al encabezado */
+
+header {
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color_5);
+    align-items: center;
+    height: 5rem;
+    padding: 0.5rem 1rem;
+}
+
+#header--logo {
+    width: 90px;
+    margin-right: auto;
+    padding: 0.2rem;
+    padding-top: 0.4rem;
+}
+
+
+/* aplicando css al la barra de navegacion */
+nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav--links {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 100%;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+    height: auto;
+    background: var(--color_4);
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    transition: all .55s ease;
+}
+
+.nav--links.open {
+    right: 0%;
+    z-index: 10001;
+    width: 100%;
+}
+
+.nav--link {
+    margin-left: 0;
+    display: block;
+    margin: 18px 0;
+    position: relative;
+    color: var(--color_2);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+.nav--link:hover {
+    transform: translateY(-2px) scale(1.1);
+}
+
+.nav--btn {
+    position: relative;
+    text-align: center;
+    padding: 0.9rem 0.7rem;
+    border-radius: 50px;
+    background-color: var(--color_2);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 1rem;
+    transition: all .3s ease;
+    color: var(--color_4);
+}
+
+.nav--btn:hover {
+    box-shadow: 3px 3px 3px #2f2f2f;
+    transform: translateY(-2.5px) scale(1.05);
+}
+
+/* aplicando css al boton hamburguesa */
+#menu-icon {
+    color: black;
+    font-size: 1rem;
+    z-index: 10001;
+    cursor: pointer;
+    display: block;
+    font-size: 3rem;
+    transition: all 0.5s ease;
+}
+
+/* aplicando css al banner */
+
+#banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.banner--img {
+    display: block;
+}
+
+.banner--title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    z-index: 1;
+    text-align: center;
+    margin-left: auto;
+    font-family: 'Belanosima', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color_1);
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 5px 5px var(--color_2);
+    animation: zoomtitle infinite 4s alternate-reverse ease;
+}
+
+/* aplicando css a la seccion quienes */
+
+.quienes--contenedor {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 1.2rem;
+}
+
+/* aplicando css a la seccion porque */
+.porque--contenedor {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1.2rem;
+}
+
+/* aplicando css a la seccion propuestas */
+
+.propuesta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1rem;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 1rem;
+}
+
+.propuesta--card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+    gap: 0.3rem;
+}
+
+.propuesta--card img {
+    width: 100%;
+    height: 50%;
+}
+
+.propuesta--card span {
+    margin: auto;
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--color_3);
+    line-height: 1em;
+    font-weight: 600;
+}
+
+
+/* aplicando css a la seccion noticias */
+
+.noticias--contenedor {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 2rem;
+}
+
+.noticias--card {
+    margin-top: .5rem;
+}
+
+
+/* aplicando css al pie de pagina */
+
+footer {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--color_2);
+    border-top: 1px solid black;
+    padding: 1.2rem;
+}
+
+footer h3 {
+    color: var(--color_4);
+    text-decoration: underline;
+}
+
+.redes,
+.direccion,
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes--links {
+    display: flex;
+    gap: 2rem;
+}
+
+.redes--link {
+    position: relative;
+    font-size: 4rem;
+    transition: all .3s ease;
+}
+
+.redes--link:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+.contacto--link {
+    position: relative;
+    color: black;
+    transition: all .3s ease;
+    margin-top: .5rem;
+}
+
+.contacto--link:hover {
+    transform: translateY(-2px) scale(1.1);
+}
+
+/* css al mapa */
+#mi-mapa {
+    width: 300px;
+    height: 200px;
+}
+
+
+@media(min-width: 768px) {
+    #menu-icon {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .nav--links {
+        position: revert;
+        width: 100%;
+        gap: 0.5rem;
+        background-color: var(--color_5);
+        opacity: 1;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+        transition: all .55s ease;
+        margin-bottom: 0;
+        margin-left: 1rem;
+    }
+
+    .nav--link {
+        margin: 0;
+    }
+
+    .nav--btn {
+        margin-bottom: 0;
+    }
+
+    .propuesta--card img {
+        height: 80%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .redes--links {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .redes,
+    .direccion,
+    .contacto {
+        height: 100%;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .banner--img {
+        max-height: 80vh;
+        width: 100%;
+    }
+
+    .banner--title {
+        font-size: 5rem;
+    }
+
+    .quienes--contenedor,
+    .porque--contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 1rem;
+        align-items: center;
+    }
+}
+
+
+@keyframes zoomtitle {
+    to {
+        transform: translate(-51%, -50%);
+    }
+
+    from {
+        transform: translate(-49%, -50%);
+    }
+}
