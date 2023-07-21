@@ -351,8 +351,8 @@ footer h3 {
     }
 
     .propuesta--card img {
-        width: 100%;
-        max-height: 12rem;
+        max-width: 140px;
+        max-height: 93px;
     }
 
     footer {
@@ -382,6 +382,11 @@ footer h3 {
 
     .banner--title {
         font-size: 5rem;
+    }
+
+    .propuesta--card img {
+        max-width: 246px;
+        max-height: 163px;
     }
 
     .quienes--contenedor,
