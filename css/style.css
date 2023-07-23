@@ -274,13 +274,13 @@ footer {
     grid-template-rows: repeat(3, auto);
     gap: 1rem;
     padding-bottom: 1rem;
-    background-color: var(--color_2);
+    background-color: var(--color_3);
     border-top: 1px solid black;
     padding: 1.2rem;
 }
 
 footer h3 {
-    color: var(--color_4);
+    color: var(--color_5);
     text-decoration: underline;
 }
 
