@@ -11,7 +11,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
 html {
@@ -55,16 +54,23 @@ img {
     padding-top: 0.4rem;
 }
 
-#formulario {
+.contenedor {
     margin: 4rem 2rem;
-    background-color: var(--color_5);
-    opacity: 0.8;
+    border-radius: 60px 10px 10px 10px;
+    padding: 4rem;
+    background-color: rgba(31, 138, 111, 0.3);
+    margin-top: .8rem;
+}
+
+#formulario {
+    opacity: 1;
 }
 
 .form--label {
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--color_3);
+    margin-bottom: .3rem;
 }
 
 @media(min-width: 768px) {

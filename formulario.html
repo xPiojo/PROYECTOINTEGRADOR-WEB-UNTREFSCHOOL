@@ -32,54 +32,29 @@
       </a>
     </header>
     <main>
-      <div id="formulario">
-        <form action="" method="get">
-          <div class="mb-3">
-            <label for="formGroupExampleInput" class="form--label"
-              >Nombre Completo</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="formGroupExampleInput"
-              placeholder="Roberto Oscar Gomez"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form--label"
-              >Asunto</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="formGroupExampleInput2"
-              placeholder="Matricula"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form--label"
-              >Email address</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="name@example.com"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form--label"
-              >Descripción</label
-            >
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
-          </div>
-          <button type="reset" class="btn btn-primary">Reset</button>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+      <div class="contenedor">
+        <div id="formulario">
+          <form target="_blank" action="https://formsubmit.co/6078af94232c9d87d505c07630adbca0" method="POST">
+            <div class="mb-3">
+              <label for="nombre" class="form--label">Nombre Completo</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre completo"/>
+            </div>
+            <div class="mb-3">
+              <label for="asunto" class="form--label">Asunto</label>
+              <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Ingrese el asunto"/>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form--label">Email address</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com"/>
+            </div>
+            <div class="mb-3">
+              <label for="descripcion" class="form--label">Descripción</label>
+              <textarea class="form-control" id="descripcion" name="descripcion" rows="3"></textarea>
+            </div>
+            <button type="reset" class="btn btn-primary">Reset</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
       </div>
     </main>
 
