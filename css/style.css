@@ -282,7 +282,7 @@ footer h3 {
 
 .redes--link {
     position: relative;
-    font-size: 4rem;
+    font-size: 3rem;
     transition: all .3s ease;
 }
 
@@ -326,7 +326,7 @@ footer h3 {
     .nav--links {
         position: revert;
         width: 100%;
-        gap: 0.5rem;
+        gap: 1rem;
         background-color: var(--color_5);
         opacity: 1;
         flex-direction: row;
@@ -343,6 +343,10 @@ footer h3 {
 
     .nav--btn {
         margin-bottom: 0;
+    }
+
+    .banner--title {
+        font-size: 3.5rem;
     }
 
     .propuesta {
@@ -395,6 +399,11 @@ footer h3 {
         grid-template-columns: 1fr 1fr;
         margin: 0 1rem;
         align-items: center;
+    }
+
+    #mi-mapa {
+        width: 500px;
+        height: 200px;
     }
 }
 
