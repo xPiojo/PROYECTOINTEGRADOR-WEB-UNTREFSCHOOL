@@ -53,6 +53,11 @@ section p {
 
 }
 
+.quienes--contenedor, .porque--contenedor, .propuesta--contenedor, .noticias--contenedor {
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+}
+
 /* aplicando css al encabezado */
 
 header {
@@ -203,7 +208,7 @@ nav {
 
 /* aplicando css a la seccion propuestas */
 
-.propuesta {
+.propuesta--contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 1rem;
@@ -242,13 +247,25 @@ nav {
 .noticias--contenedor {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    margin-left: 2rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+    margin: 0 2rem;
 }
 
 .noticias--card {
-    margin-top: .5rem;
+    border: 2px solid var(--color_4);
+    height: 100%;
+    padding: 1rem;
+    border-radius: 50px 10px 10px 10px;
+    width: 100%;
+    box-shadow: 5px 5px 3px var(--color_4);
+    background-color: var(--color_2);
 }
 
+.noticias--card--parrafo {
+    color: var(--color_5);
+}
 
 /* aplicando css al pie de pagina */
 
@@ -394,11 +411,17 @@ footer h3 {
     }
 
     .quienes--contenedor,
-    .porque--contenedor {
+    .porque--contenedor, .noticias--contenedor {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 0 1rem;
+        margin: 0 2rem;
         align-items: center;
+    }
+
+    .noticias--contenedor {
+        grid-template-rows: 1fr;
+        padding: 2rem;
+        gap: 3rem;
     }
 
     #mi-mapa {
