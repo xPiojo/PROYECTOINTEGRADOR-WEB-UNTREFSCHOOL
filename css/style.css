@@ -50,7 +50,6 @@ section>h2 {
 section p {
     padding: 1rem;
     margin-bottom: 0.5rem;
-
 }
 
 .quienes--contenedor, .porque--contenedor, .propuesta--contenedor, .noticias--contenedor {
@@ -199,6 +198,10 @@ nav {
     gap: 1.2rem;
 }
 
+.contenedor--img {
+    border-radius: 10px;
+}
+
 /* aplicando css a la seccion porque */
 .porque--contenedor {
     display: grid;
@@ -228,6 +231,7 @@ nav {
 .propuesta--card img {
     max-width: 165px;
     max-height: 88.55px;
+    border-radius: 20px;
 }
 
 .propuesta--card span {
@@ -365,7 +369,7 @@ footer h3 {
         font-size: 3.5rem;
     }
 
-    .propuesta {
+    .propuesta--contenedor {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
     }
